@@ -1,0 +1,14 @@
+#!/bin/sh
+
+dir=train
+sub=1
+while [ $sub -lt 10 ]
+      do
+          cd ~/code/projects/signature-rec/"$dir"
+          mv 00"$sub" real
+          mkdir 0"$sub"
+          mv real 0"$sub"
+          mv 00"$sub"_forg 0"$sub"
+          mv 0"$sub"/00"$sub"_forg 0"$sub"/forg
+          ((sub = sub+1))
+          done

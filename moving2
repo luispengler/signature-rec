@@ -1,0 +1,11 @@
+#!/bin/sh
+
+dir=train
+sub=1
+counter=1
+until [ $sub -lt 48 ]
+      cd 0"$sub"/forg
+      for f in *. do
+
+
+          done
